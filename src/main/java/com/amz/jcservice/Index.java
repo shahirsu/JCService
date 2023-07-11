@@ -7,6 +7,6 @@ public class Index {
 
     @GetMapping("/")
     public ModelAndView AtoredPage() {
-        return new ModelAndView("index");
+        return new ModelAndView("login");
     }
 }
