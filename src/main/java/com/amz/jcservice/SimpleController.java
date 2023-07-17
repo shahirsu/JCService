@@ -24,9 +24,5 @@ public class SimpleController {
 
 
     }
-    @GetMapping("/")
-    public ModelAndView AtoredPage() {
-        return new ModelAndView("index");
-    }
 
 }
