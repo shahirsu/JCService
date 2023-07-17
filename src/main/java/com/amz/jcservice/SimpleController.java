@@ -14,7 +14,7 @@ import java.util.Map;
 public class SimpleController {
 
     private static final String CLIENT_ID_PARAM_NAME = "id";
-    private static final String WEB = "image_downloader/index.html";
+    private static final String WEB = "/image_downloader/index.html";
 
     @RequestMapping(value = {"/{id}/index"}, // Endpoint to handle GET requests for /{id}/index with id controlled by user
             method = RequestMethod.GET)
