@@ -23,7 +23,7 @@ public class SimpleController {
 
 
     }
-    @GetMapping("/")
+    @GetMapping("/hello")
     public ModelAndView AtoredPage() {
         return new ModelAndView("index");
     }
