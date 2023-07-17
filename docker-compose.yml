@@ -15,7 +15,7 @@ services:
       - "db"
 
   image_downloader:
-    build: image_downloader
+    build: src/main/resources/templates
     ports:
       - 80:80
   db:
