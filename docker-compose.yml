@@ -13,11 +13,6 @@ services:
       - PGUSER=postgres
     depends_on:
       - "db"
-
-  image_downloader:
-    build: src/main/resources/templates
-    ports:
-      - 80:80
   db:
     image: postgres
     environment:
