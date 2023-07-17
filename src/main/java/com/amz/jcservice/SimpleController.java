@@ -1,13 +1,12 @@
 package com.amz.jcservice;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
 import java.util.Map;
+
+@RestController
 
 public class SimpleController {
 
@@ -23,6 +22,10 @@ public class SimpleController {
         return modelAndView;
 
 
+    }
+    @GetMapping("/")
+    public ModelAndView AtoredPage() {
+        return new ModelAndView("index");
     }
 
 }
